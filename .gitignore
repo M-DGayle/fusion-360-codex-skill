@@ -1,0 +1,20 @@
+# Generated machine-specific MCP launch configuration.
+/.mcp.json
+__pycache__/
+.vscode/
+*.py[cod]
+.venv/
+venv/
+.fusion-bridge/
+connection.json
+connection.tmp
+audit.jsonl
+artifacts/
+outputs/
+*.f3d
+*.f3z
+*.step
+*.stp
+*.stl
+.env
+.env.*

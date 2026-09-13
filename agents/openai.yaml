@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fusion 360 Bridge"
+  short_description: "Model in Fusion through direct API control"
+  default_prompt: "Use $fusion-bridge to inspect my active Fusion design and help make the requested changes."

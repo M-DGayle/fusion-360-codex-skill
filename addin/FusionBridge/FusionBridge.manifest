@@ -1,0 +1,10 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "addin",
+  "id": "91d4ce44-71ec-4b7e-8aa8-55b56a42d100",
+  "author": "Local developer",
+  "description": {"": "Authenticated local API bridge for Codex. General Python is privileged, not sandboxed."},
+  "version": "0.1.0",
+  "runOnStartup": true,
+  "supportedOS": "windows"
+}

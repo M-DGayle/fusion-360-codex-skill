@@ -1,0 +1,21 @@
+{
+  "name": "fusion-bridge",
+  "version": "0.1.0+codex.20260913164310",
+  "description": "Direct, authenticated local Fusion API control with model inspection, recovery archives, and privileged Python execution.",
+  "author": {
+    "name": "Local developer"
+  },
+  "interface": {
+    "displayName": "Fusion Bridge",
+    "shortDescription": "Model directly in Fusion without mouse automation.",
+    "longDescription": "Controls the running Fusion desktop through a local add-in. Inspect geometry, capture the viewport, check interference, export parts, and execute guarded edits. General Python is privileged and is not sandboxed.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Help me use Fusion Bridge."
+  },
+  "mcpServers": "./.mcp.json"
+}

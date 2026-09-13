@@ -1,0 +1,31 @@
+name: Validate skill and bridge
+
+on:
+  push:
+    branches: [dev, qa]
+  pull_request:
+    branches: [dev, qa]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Unit tests (no Fusion required)
+        run: python -m unittest discover -s tests -v
+      - name: Validate skill metadata and local references
+        run: python scripts/validate_package.py
+      - name: Preview setup without changing configuration
+        run: python scripts/setup_bridge.py --mcp --dry-run
+      - name: Real MCP stdio discovery (no Fusion modeling)
+        run: python tests/mcp_smoke.py
