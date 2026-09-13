@@ -16,7 +16,7 @@ Install the whole repository root, not just SKILL.md. With Codex's bundled skill
 --repo M-DGayle/fusion-360-codex-skill --ref dev --path . --name fusion-bridge
 ```
 
-Repository access is required if the repository is private. Start a new Codex task after installation if the skill is not discovered in the current session. This repository's root is the portable skill directory; no additional repository is needed for its runtime resources.
+This repository is public and available under the MIT license. Start a new Codex task after installation if the skill is not discovered in the current session. This repository's root is the portable skill directory; no additional repository is needed for its runtime resources.
 
 ### One-time Fusion activation
 
@@ -88,4 +88,6 @@ A full Fusion quit/relaunch, cloud saving, macOS, multiple simultaneous Fusion p
 - [Autodesk main-thread custom events](https://help.autodesk.com/cloudhelp/ENU/Fusion-360-API/files/Threading_UM.htm)
 - [Official MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 
-No open-source license grant is included in this initial publication.
+## License
+
+This integration is open source under the [MIT License](LICENSE). Autodesk Fusion and third-party dependencies remain subject to their own licenses; this license does not grant rights to Autodesk software, branding, or user CAD models.
